@@ -3,9 +3,9 @@ import mysql.connector
 
 
 
-conn =mysql.connector.connect(host='localhost',user='root',password='2953',database='db1')
+conn =mysql.connector.connect(host='localhost',user='root',password='2953',database='Plant_Stress_Resistance')
 
-query = "SELECT * FROM tb1;"  # replace with your table name
+query = "SELECT * FROM Resistance;"  # replace with your table name
 
 # Fetch data into a pandas DataFrame
 df = pd.read_sql(query, conn)

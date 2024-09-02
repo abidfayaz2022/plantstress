@@ -1,5 +1,5 @@
 import mysql.connector
-conn =mysql.connector.connect(host='localhost',user='root',password='2953',database='db1')
+conn =mysql.connector.connect(host='localhost',user='root',password='2953',database='d1')
 print(conn.connection_id)
 #to perform any sql command create object of cursor function
 cur = conn.cursor()
@@ -9,7 +9,7 @@ cur = conn.cursor()
 i=0
 while i<32400:
     i=i+1
-    cur.execute("INSERT INTO tb1 (id, title) VALUES (%s, %s)", (i, "python3"))
+    cur.execute("INSERT INTO t1 (name) VALUES (%s)", ("python3"))
   
 
 
